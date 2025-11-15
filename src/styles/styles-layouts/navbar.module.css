@@ -1,0 +1,32 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    background: #4956E6;
+    justify-content: center;
+}
+
+.Nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+}
+
+.Nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+.Nav ul li{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 20px;
+}

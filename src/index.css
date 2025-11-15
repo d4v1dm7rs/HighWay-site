@@ -1,57 +1,10 @@
 
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-
-}
-
-
-.titulo {
-  font-size: 50px;
-  font-family: arial;
-  color: #a523b6ff;
-}
-
-.titulo2 {
-  font-size: 30px;
-  font-family: arial;
-  font-weight: bold;
-
-}
-
-.input {
-  margin-left: 15px;
+  flex-direction: column;
+  flex: 1;
   width: 100%;
-  padding: 15px 20px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  font-size: 18px;
-  transition: all 0.3s ease;
-  outline: none;
-}
-
-.input:hover {
-  border-color: #a523b6ff ;
-}
-
-.input:focus {
-  border-color: #a523b6ff; 
-  box-shadow: 0 0 0 2px rgba(157, 55, 170, 0.387);
-}
-
-.divInput {
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-p{
-  font-size: 20px;
-  font-weight: bolder;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  margin: 0;
 }
