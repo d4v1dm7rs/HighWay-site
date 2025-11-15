@@ -1,12 +1,9 @@
-function home(){
+
+function Navbar(){
     return(
+        <div>
 
-
-            <div></div>
-
-
-
+        </div>
     )
 }
-
-export default home;
+export default Navbar;
