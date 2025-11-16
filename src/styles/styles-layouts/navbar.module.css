@@ -1,34 +1,50 @@
 .Header{
     display: flex;
-    flex-direction: column;
+    flex-direction:wrap;
     flex: 1;
     width: 100%;
-    background: #4956E6;
     justify-content: center;
+    align-items: center;
+    background: #4956E6;
+    background: linear-gradient(25deg, rgba(73, 86, 230, 1) 0%, rgba(18, 26, 89, 1) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+.LogoEmpresa{
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.LogoEmpresa:hover{
+    transform: scale(1.2);
+}
+
 
 .Nav{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin: 10px;
 }
 
-.Nav ul{
+.List{
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    gap: 20px;
-    padding: 20px;
+    gap: 50px;
+    padding: 20px 40px;
     list-style: none;
+    background: #111;
+    border-radius: 20px;
 }
 
-.Nav ul li{
+.Iten{
     text-align: center;
     text-decoration: none;
     color: #fff;
-    gap: 20px;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;

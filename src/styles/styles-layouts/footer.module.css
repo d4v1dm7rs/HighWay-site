@@ -1,7 +1,11 @@
 .Footer{
     display: flex;
-    flex-direction: column;
+    flex-direction:wrap;
     flex: 1;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     background: #4956E6;
+    background: linear-gradient(25deg, rgba(73, 86, 230, 1) 0%, rgba(18, 26, 89, 1) 100%);
+    padding: 20px;
 }
