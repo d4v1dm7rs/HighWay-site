@@ -9,32 +9,30 @@ import NavCatalogo from '../../assets/imgNavbar/icon-nav-Catalogo.svg'
 
 function Navbar(){
     const homePath = "/"
+    
     return(
         <header className={styles.Header}>
-            <Link to={homePath}>
+            <Link className='' to={homePath}>
                 <img src={LogoEmpresa} alt="ByteStore" className={styles.LogoEmpresa}/>
             </Link>
             <nav className={styles.Nav}>
                 <ul className={styles.List}>
-                    <li className={styles.item}>
-                        <Link to="/">Home</Link>
-                        <img src={NavHome} alt="icone Home"/>
-                    </li>
+                    <Link to="/">
+                        <img src={NavHome} alt="icone Home" className={styles.IconesNav}/>
+                    </Link>
 
-                    <li className={styles.item}>
-                        <Link to="/empresa">Empresa</Link>
-                        <img src={NavEmpresa} alt="icone Empresa"/>
-                    </li>
+                        <Link to="/empresa">
+                            <img src={NavEmpresa} alt="icone Empresa" className={styles.IconesNav}/>
+                        </Link>
 
-                    <li className={styles.item}>
-                        <Link to="/contato">Contato</Link>
-                        <img src={NavContato} alt="icone Contato"/>
-                    </li>
 
-                    <li className={styles.item}>
-                        <Link to="/catalogo">Catálogo</Link>
-                        <img src={NavCatalogo} alt="icone Catalogo"/>
-                    </li>
+                        <Link to="/contato">
+                            <img src={NavContato} alt="icone Contato" className={styles.IconesNav}/>
+                        </Link>
+
+                        <Link to="/catalogo">
+                            <img src={NavCatalogo} alt="icone Catalogo" className={styles.IconesNav}/>
+                        </Link>
                 </ul>
             </nav>
         </header>

@@ -5,3 +5,46 @@
     flex: 1;
     padding: 20px;
 }
+.ContentCatalogo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    height: 2000px;
+}
+.BoxProduto{
+    width: 300px;
+    height: 420px;
+    background: #1b1b1b;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 11px 29px -10px rgba(27,27,27,0.64);
+    -webkit-box-shadow: 1px 11px 29px -10px rgba(27,27,27,0.64);
+    -moz-box-shadow: 1px 11px 29px -10px rgba(27,27,27,0.64);
+}
+.BoxProduto:hover{
+    margin-bottom: 20px;
+}
+.ImgProduto{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+
+}
+.NomeProduto{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+}
+.PrecosProdutos{
+    padding: 0;
+}
+.PrecoAntigo{
+    color: #6e6e6e;
+    font-size: 14px;
+}
+.PrecoNovo{
+    color: #4956E6;
+    font-weight: bold;
+    font-size: 22px;
+}
