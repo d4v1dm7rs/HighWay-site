@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 
-function Navbar(){
-    return(
-        <div>
-=======
 import { Link } from 'react-router-dom'
 import styles from '../../styles/styles-layouts/navbar.module.css'
 import LogoEmpresa from '../../assets/imgNavbar/LogoEmpresa.png'
@@ -11,7 +6,6 @@ import NavHome from '../../assets/imgNavbar/icon-nav-Home.svg'
 import NavEmpresa from '../../assets/imgNavbar/icon-nav-Empresa.svg'
 import NavContato from '../../assets/imgNavbar/icon-nav-Contato.svg'
 import NavCatalogo from '../../assets/imgNavbar/icon-nav-Catalogo.svg'
->>>>>>> 5fe1e92fe0fba72ccfb321210d09e2a67093a2de
 
 
 function Navbar(){

@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-function home(){
-    return(
 
-            <div>
-
-            </div>
-
-
-    )
-}
-
-export default home;
-=======
 import styles from '../../styles/styles-pages/home.module.css'
 import LogoMini from '../../assets/imgHome/LogoMinimalista.png'
 
@@ -29,4 +16,3 @@ function Home(){
     )
 }
 export default Home
->>>>>>> 5fe1e92fe0fba72ccfb321210d09e2a67093a2de

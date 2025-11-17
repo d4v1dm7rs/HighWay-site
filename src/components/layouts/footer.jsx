@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-function home(){
-    return(
 
-
-            <div></div>
-
-
-
-    )
-}
-
-export default home;
-=======
 import { Link } from 'react-router-dom'
 import styles from '../../styles/styles-layouts/footer.module.css'
 import ImgFooter from '../../assets/imgFooter/LogoEmpresa.png'
@@ -46,4 +33,3 @@ function Footer(){
     )
 }
 export default Footer
->>>>>>> 5fe1e92fe0fba72ccfb321210d09e2a67093a2de
