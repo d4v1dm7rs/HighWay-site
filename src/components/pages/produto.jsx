@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import styles from '../../styles/styles-pages/produto.module.css'
-import Produto1 from '../../assets/imgCatalogo/produtoImg1.png'
+import Produto1 from '../../assets/imgCatalogo/produto1.png'
 import Produto2 from '../../assets/imgCatalogo/produto2.jpeg'                               
 import Produto3 from '../../assets/imgCatalogo/produto3.jpg'  
 import Produto4 from '../../assets/imgCatalogo/produto4.jpg'  
