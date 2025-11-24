@@ -1,7 +1,6 @@
-
-/*Usado o css abaixo para deixar os elementos flexiveis para ser responsivo*/
 .App {
   display: flex;
   flex-direction: column;
   width: 100%;
+  font-family: arial;
 }

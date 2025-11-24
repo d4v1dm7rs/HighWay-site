@@ -1,32 +1,312 @@
-.ContainerHome{
-    justify-content: center;
+.containerHome {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #050505; 
+    overflow-x: hidden;
+}
+
+.fundo {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), #050505), url("/src/assets/imgHome/fundoHighway.svg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
 }
-.Titulo{
+
+.nome img {
+    max-width: 800px;
+    width: 90%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 170, 0, 0.3));
+    animation: float 6s ease-in-out infinite;
+}
+
+.card h1 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    max-width: 800px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.equipe {
+    background-color: #050505;
+    padding: 100px 20px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+}
+
+.contentEquipe {
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 191, 0, 0.2);
+    box-shadow: 0 0 30px rgba(255, 191, 0, 0.1);
+    border-radius: 30px;
+    padding: 60px 40px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.contentEquipe h1 {
+    font-size: 3rem;
+    color: #FFAA00;
+    margin-bottom: 35px; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden; 
+    padding-bottom: 15px; 
+}
+
+.contentEquipe h1::after {
+    content: '';    
+    position: absolute; 
+    bottom: 0; 
+    left: 0;  
+    width: 50%; 
+    height: 4px;
+    background: #FFAA00;
+    border-radius: 2px;
+    animation: moveUnderlineSideToSide 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveUnderlineSideToSide {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%); 
+    }
+}
+
+.gridMembros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.membro {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.membro:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.imgMembro img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #FFAA00;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(255, 170, 0, 0.4);
+}
+
+.membro h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.membro p {
+    font-size: 0.9rem;
+    color: #FFAA00;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.containerMaisInfo {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("/src/assets/imgHome/fundoEquipe.svg");
+    background-size: cover;
+    background-attachment: fixed; 
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerMaisInfo h1 {
+    font-size: 2.5rem;
+    color: #FFAA00;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.contentInfo {
+    display: flex;
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    border-radius: 20px;
-}
-.SaudacaoHome{
-    color: #fff;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    gap: 60px;
+    max-width: 1000px;
 }
 
-.ImgEmpresa{
-    width: 40px;
-    height: 40px;
-}
-
-.ContentHome{
+.info1 img {
+    max-width: 350px;
     width: 100%;
-    height: auto;   
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d1d1d1;
+    border-left: 4px solid #FFAA00;
+    padding-left: 20px;
+}
+
+.identidadeVisual {
+    background: #101010 url("/src/assets/imgHome/fundoProjetos.svg");
+    background-size: cover;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapperIdentidade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.containerBox {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(30, 30, 30, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerBox h1 {
+    font-size: 1.5rem;
+    color: #FFAA00;
+    border-bottom: 2px solid #FFAA00;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.imgUso img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cardPaletas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.paletaCores {
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
     padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.bolinhaCor {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.2);
+    margin-right: 20px;
+}
+
+.paletaCores p {
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .fundo { min-height: 80vh; }
+    .card h1 { font-size: 1.2rem; }
+    .contentEquipe h1 { font-size: 2rem; }
+    .contentInfo { text-align: center; }
+    .info p { border-left: none; border-top: 4px solid #FFAA00; padding-top: 20px; padding-left: 0; }
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    padding-top: 20px; 
+    position: relative;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.socialLinks img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s, filter 0.2s;
+    filter: invert(1);
+}
+
+.socialLinks a:hover img {
+    transform: scale(1.2); 
+    filter: invert(78%) sepia(66%) saturate(1209%) hue-rotate(359deg) brightness(102%) contrast(106%);
+}
+
+.socialLinks::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: #FFAA00;
+    transform: scaleX(0); 
+    transform-origin: center;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.membro:hover .socialLinks::before {
+    transform: scaleX(1); 
+}
+
+.membro:hover .socialLinks {
+    opacity: 1; 
 }
