@@ -23,7 +23,6 @@
     width: 90%;
     height: auto;
     filter: drop-shadow(0 0 10px rgba(255, 170, 0, 0.3));
-    animation: float 6s ease-in-out infinite;
 }
 
 .card h1 {
@@ -34,12 +33,6 @@
     color: #f0f0f0;
     text-transform: uppercase;
     max-width: 800px;
-}
-
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
 }
 
 .equipe {
@@ -82,16 +75,6 @@
     height: 4px;
     background: #FFAA00;
     border-radius: 2px;
-    animation: moveUnderlineSideToSide 2s ease-in-out infinite alternate;
-}
-
-@keyframes moveUnderlineSideToSide {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(100%); 
-    }
 }
 
 .gridMembros {
