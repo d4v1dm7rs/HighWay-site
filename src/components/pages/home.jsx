@@ -22,7 +22,7 @@ function Home(){
                     <img src={nomeEmpresa} alt="Highway Logo"/>
                 </div>
                 <div className={styles.card}>
-                    <h1>"Nessa rota, o destino é o reconhecimento"</h1>
+                    <h1>"Nessa rota, o destino é o conhecimento"</h1>
                 </div>
             </header>
 
